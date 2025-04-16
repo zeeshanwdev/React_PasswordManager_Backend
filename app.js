@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // app.use(cors())
 app.use(cors({
-  origin: 'https://your-vercel-domain.vercel.app',                                       
+  origin: 'https://react-password-manager-theta.vercel.app',                              //Need to Change                          
   methods: ['GET', 'POST', 'DELETE'],
   credentials: true
 }));
