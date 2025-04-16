@@ -7,13 +7,7 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 
-// app.use(cors())
-app.use(cors({
-  origin: 'https://react-password-manager-theta.vercel.app',                              //Need to Change                          
-  methods: ['GET', 'POST', 'DELETE'],
-  credentials: true
-}));
-
+app.use(cors())
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
